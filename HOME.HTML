@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>StyleCart - Online Shopping & Inventory Management System</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f7f7f7;
+    color:#333;
+}
+
+
+/* Header */
+
+header{
+    background:#111;
+    color:white;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#ffcc00;
+}
+
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:17px;
+}
+
+
+nav a:hover{
+    color:#ffcc00;
+}
+
+
+
+/* Hero Section */
+
+.hero{
+
+    height:450px;
+    background:
+    linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url("https://images.unsplash.com/photo-1441986300917-64674bd600d8");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+
+}
+
+
+.hero h1{
+
+    font-size:45px;
+    margin-bottom:20px;
+
+}
+
+
+.hero p{
+
+    font-size:20px;
+
+}
+
+
+.btn{
+
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 30px;
+    background:#ffcc00;
+    color:#111;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+
+}
+
+
+
+/* About */
+
+.about{
+
+    padding:50px;
+    text-align:center;
+
+}
+
+
+.about h2{
+
+    font-size:35px;
+    margin-bottom:20px;
+
+}
+
+
+.about p{
+
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+}
+
+
+
+/* Products */
+
+.products{
+
+    padding:50px;
+
+}
+
+
+.products h2{
+
+    text-align:center;
+    font-size:35px;
+    margin-bottom:35px;
+
+}
+
+
+.product-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+
+}
+
+
+.card{
+
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 0 10px #ccc;
+
+}
+
+
+.card img{
+
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+
+}
+
+
+.card h3{
+
+    margin:15px 0;
+
+}
+
+
+.price{
+
+    color:#e91e63;
+    font-size:20px;
+    font-weight:bold;
+
+}
+
+
+.card button{
+
+    margin-top:15px;
+    padding:10px 20px;
+    background:#111;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+
+}
+
+
+.card button:hover{
+
+    background:#ffcc00;
+    color:black;
+
+}
+
+
+/* Footer */
+
+footer{
+
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+🛍 StyleCart
+</div>
+
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+
+</header>
+<!-- Home Section -->
+
+<section class="hero">
+
+<div>
+
+<h1>Welcome To StyleCart</h1>
+
+<p>
+Your Complete Online Shopping & Inventory Management System
+</p>
+
+<a href="#products" class="btn">
+Shop Now
+</a>
+
+</div>
+
+</section>
+
+
+
+<!-- About Section -->
+
+<section class="about" id="about">
+
+<h2>About StyleCart</h2>
+
+<p>
+StyleCart is an online shopping and inventory management system
+where customers can explore different products including clothes,
+shoes, cosmetics and accessories. Our platform provides a simple,
+fast and user-friendly shopping experience with organized product
+management.
+</p>
+
+</section>
+
+
+
+
+<!-- Products Section -->
+
+<section class="products" id="products">
+
+<h2>Our Products</h2>
+
+
+<div class="product-container">
+
+
+
+<!-- Clothes -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab">
+
+<h3>Premium T-Shirt</h3>
+
+<p class="price">$25</p>
+
+<button>Add To Cart</button>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea">
+
+<h3>Fashion Jacket</h3>
+
+<p class="price">$60</p>
+
+<button>Add To Cart</button>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3">
+
+<h3>Women Dress</h3>
+
+<p class="price">$45</p>
+
+<button>Add To Cart</button>
+
+</div>
+
+
+
+
+
+<!-- Shoes -->
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
+
+<h3>Sports Shoes</h3>
+
+<p class="price">$80</p>
+
+<button>Add To Cart</button>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1549298916-b41d501d3772">
+
+<h3>Casual Shoes</h3>
+
+<p class="price">$55</p>
+
+<button>Add To Cart</button>
+
+</div>
+
+
+
+<!-- Cosmetics -->
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348">
+
+<h3>Beauty Cosmetics Kit</h3>
+
+<p class="price">$35</p>
+
+<button>Add To Cart</button>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1556228720-195a672e8a03">
+
+<h3>Skin Care Products</h3>
+
+<p class="price">$40</p>
+
+<button>Add To Cart</button>
+
+</div>
+
+
+
+<!-- Accessories -->
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1523779917675-b6ed3a42a561">
+
+<h3>Fashion Accessories</h3>
+
+<p class="price">$20</p>
+
+<button>Add To Cart</button>
+
+</div>
+
+<!-- More Products -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b">
+
+<h3>Fashion Handbag</h3>
+
+<p class="price">$50</p>
+
+<button>Add To Cart</button>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49">
+
+<h3>Luxury Watch</h3>
+
+<p class="price">$90</p>
+
+<button>Add To Cart</button>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338">
+
+<h3>Jewelry Collection</h3>
+
+<p class="price">$70</p>
+
+<button>Add To Cart</button>
+
+</div>
+
+
+
+</div>
+
+</section>
+
+
+
+
+<!-- Contact Section -->
+
+<section class="about" id="contact">
+
+<h2>Contact Us</h2>
+
+<p>
+For any query or order information, contact StyleCart customer support.
+</p>
+
+<p>
+Email: sabihaakram@18gmail.com
+</p>
+
+<p>
+Phone: +92 3458969878
+</p>
+
+</section>
+
+
+
+
+
+<!-- Footer -->
+
+<footer>
+
+<p>
+© 2026 StyleCart. All Rights Reserved.
+</p>
+
+<p>
+Online Shopping & Inventory Management System
+</p>
+
+</footer>
+
+
+
+
+
+<!-- JavaScript -->
+
+<script>
+
+let buttons = document.querySelectorAll("button");
+
+
+buttons.forEach(function(button){
+
+button.addEventListener("click", function(){
+alert("Product Added To Cart Successfully!");
+
+});
+
+});
+
+
+</script>
+
+
+</body>
+
+</html>
